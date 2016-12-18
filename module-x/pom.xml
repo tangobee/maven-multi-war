@@ -10,6 +10,30 @@
   <artifactId>module-x</artifactId>
   <packaging>war</packaging>
 
+ <!--  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <attachClasses>true</attachClasses>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <executions>
+          <execution>
+            <id>run</id>
+            <phase/>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build> -->
+
   
   <build>
     <plugins>
@@ -48,14 +72,14 @@
           <classesClassifier>classes</classesClassifier>
         </configuration>
       </plugin>
-      <!-- <plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
         <configuration>
           <mainClass>org.test.int1.Main</mainClass>
         </configuration>
-      </plugin>  -->    
+      </plugin>  
     </plugins>
   </build>
 </project>
